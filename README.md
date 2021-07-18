@@ -102,3 +102,9 @@ I also define a variable *bala* and use the arguments tag where *bala* is used t
 ```
 condor_submit -name ettore testcondor2.cond
 ```
+
+Here is my exercise
+-------------------
+This execrise is  executed from recas.
+
+CMSSW python script: 
