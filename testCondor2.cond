@@ -1,0 +1,7 @@
+executable = cmsRun.sh
+output = test$(Process).out
+error  = test$(Process).err
+log    = test$(Process).log
+RUN1 = 001
+arguments = $(RUN1) $(Item)
+Queue 1 in ( 001,002,003,004 )
