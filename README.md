@@ -2,7 +2,7 @@
 Exercise for submit jobs in condor
 ====================================================
 
-*Following is the document created by Marcello to teach me condor job submission*
+*This document was created by Marcello about condor job submission*
 
 Condor is a submission system, and as all such systems, it will execute a file (a script) in a different machine and so you need to provide something that is auto-consistent, able to gather whatever is needed in input and send back whatever is needed in output.
 
