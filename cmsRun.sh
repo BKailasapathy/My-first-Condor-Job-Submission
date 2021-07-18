@@ -1,11 +1,15 @@
 #!/bin/bash
 
-RUN0=$1
-RUNnew=$2
+
+# This script is written to submit CMSSW job in condor from recas.
 
 
-SCRIPT=$(readlink -f "$0")					# Absolute location of the file
-SCRIPTPATH=$(dirname "$SCRIPT")				# Absolute path of the directory
+RUN0=$1       # Fixed value as in the python file
+RUNnew=$2     # varies with run number. Input is given by testCondor2.cond
+
+
+SCRIPT=$(readlink -f "$0")					
+SCRIPTPATH=$(dirname "$SCRIPT")
 
 echo $SCRIPT
 echo $SCRIPTPATH
@@ -18,14 +22,14 @@ cd ~/myDir$RUNnew
 mv /lustrehome/bkailasa/MyAnalysis/CMSSW/myDir.tar.gz .
 tar -xvzf myDir.tar.gz
 
-SCRIPT=$(readlink -f "$0")					# Absolute location of the file
-SCRIPTPATH=$(dirname "$SCRIPT")				# Absolute path of the directory
+SCRIPT=$(readlink -f "$0")					
+SCRIPTPATH=$(dirname "$SCRIPT")				
 echo "CMSSW is copied to" $SCRIPTPATH
 
 cd CMSSW_10_2_0/src
 
-SCRIPT=$(readlink -f "$0")					# Absolute location of the file
-SCRIPTPATH=$(dirname "$SCRIPT")				# Absolute path of the directory
+SCRIPT=$(readlink -f "$0")					
+SCRIPTPATH=$(dirname "$SCRIPT")				
 echo "Now you are in" $SCRIPTPATH
 
 sed "s/$RUN0/$RUNnew/" ./FastjetEx/FastJetSimple1/python/FastJetSimple1.py > ./FastjetEx/FastJetSimple1/python/FastJetSimple$RUNnew.py
