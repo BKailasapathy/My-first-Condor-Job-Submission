@@ -1,5 +1,5 @@
 # My-first-Condor-Job-Submission
-Exercise for submit jobs in condor
+Introduction to submit jobs in condor
 ====================================================
 
 *This document was created by Marcello about condor job submission*
