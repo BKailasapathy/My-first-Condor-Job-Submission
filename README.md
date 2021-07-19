@@ -1,8 +1,5 @@
 # My-first-Condor-Job-Submission
 
-  - [Introduction to submit jobs in condor](https://github.com/BKailasapathy/My-first-Condor-Job-Submission/blob/main/README.md#introduction-to-submit-jobs-in-condor)
-  - [My Exercise](https://github.com/BKailasapathy/My-first-Condor-Job-Submission#here-is-my-exercis)
-
 ## Introduction to submit jobs in condor
 
 
@@ -107,8 +104,8 @@ I also define a variable *bala* and use the arguments tag where *bala* is used t
 condor_submit -name ettore testcondor2.cond
 ```
 
-Here is my exercise
--------------------
+## Here is my exercise
+
 This execrise is  executed from recas.
 
 - CMSSW [python script](https://raw.githubusercontent.com/BKailasapathy/My-first-Condor-Job-Submission/main/FastJetSimple1.py) 
