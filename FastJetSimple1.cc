@@ -1,5 +1,6 @@
 // -*- C++ -*-
 //
+//-------------------------------------------
 // Package:    FastjetEx/FastJetSimple1
 // Class:      FastJetSimple1
 //
